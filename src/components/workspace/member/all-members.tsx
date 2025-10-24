@@ -24,7 +24,7 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { changeWorkspaceMemberRoleMutationFn } from "../../../lib/api";
 import { toast } from "../../../hooks/use-toast";
 import { Permissions } from "../../../constant";
-import RemoveMember from "./remove-member";
+
 const AllMembers = () => {
   const { user, hasPermission } = useAuthContext();
 

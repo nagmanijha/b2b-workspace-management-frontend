@@ -7,6 +7,7 @@ const useAuth = () => {
     queryFn: getCurrentUserQueryFn,
     staleTime: 0,
     retry: false,
+    refetchOnWindowFocus: false,
   });
   return query;
 };

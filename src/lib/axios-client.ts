@@ -19,9 +19,9 @@ API.interceptors.response.use(
   async (error) => {
     const { data, status } = error.response;
 
-    if (data === "Unauthorized" && status === 401 && window.location.pathname !== "/") {
-      window.location.href = "/";
-    }
+    // if (data === "Unauthorized" && status === 401 && window.location.pathname !== "/") {
+    //   window.location.href = "/";
+    // }
 
     const customError: CustomError = {
       ...error,

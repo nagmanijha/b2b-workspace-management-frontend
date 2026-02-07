@@ -2,7 +2,7 @@ import type { CustomError } from "../types/custom-error.type";
 import axios from "axios";
 
 
-const baseURL = import.meta.env.VITE_API_BASE_URL;
+const baseURL = import.meta.env.VITE_API_BASE_URL || "https://b2b-workspace-management-backend.onrender.com/api";
 
 const options = {
   baseURL,
@@ -26,7 +26,7 @@ API.interceptors.response.use(
     const customError: CustomError = {
       ...error,
       errorCode: data?.errorCode || "UNKNOWN_ERROR",
-       message: data?.message || error.message,
+      message: data?.message || error.message,
     };
 
     return Promise.reject(customError);

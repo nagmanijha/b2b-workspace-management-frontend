@@ -73,7 +73,7 @@ const SignUp = () => {
   return (
     <div className="mesh-gradient relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden p-4 sm:p-6 lg:p-8">
       {/* Main Card Container */}
-      <div className="glass-card flex w-full max-w-[1000px] flex-col overflow-hidden rounded-xl shadow-2xl lg:flex-row max-h-[660px]">
+      <div className="glass-card flex w-full max-w-[1000px] flex-col overflow-hidden rounded-xl shadow-2xl lg:flex-row max-h-[760px]">
         {/* Left Side: 3D Illustration Panel */}
         <div className="relative hidden w-full lg:flex lg:w-1/2 flex-col justify-between bg-white/40 p-10 dark:bg-black/20">
           <div className="z-10 flex items-center gap-3">

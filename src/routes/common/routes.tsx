@@ -24,6 +24,13 @@ export const protectedRoutePaths = [
   { path: PROTECTED_ROUTES.PROJECT_DETAILS, element: <ProjectDetails /> },
 ];
 
+import PrivacyPolicy from "../../page/legal/PrivacyPolicy";
+import TermsOfService from "../../page/legal/TermsOfService";
+import HelpCenter from "../../page/legal/HelpCenter";
+
 export const baseRoutePaths = [
   { path: BASE_ROUTE.INVITE_URL, element: <InviteUser /> },
+  { path: BASE_ROUTE.PRIVACY, element: <PrivacyPolicy /> },
+  { path: BASE_ROUTE.TERMS, element: <TermsOfService /> },
+  { path: BASE_ROUTE.HELP, element: <HelpCenter /> },
 ];
